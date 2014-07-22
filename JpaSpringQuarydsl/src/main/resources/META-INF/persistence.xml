@@ -1,0 +1,15 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+
+  <persistence-unit name="hibernatePersistenceUnit" transaction-type="RESOURCE_LOCAL">
+  		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+         	<property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
+		</properties>
+  </persistence-unit>
+	 <properties>
+		<property name="openjpa.ConnectionUserName" value=""/>
+		<property name="openjpa.ConnectionPassword" value=""/>
+		<property name="openjpa.ConnectionURL" value="jdbc:jtds:sqlserver://xxx:1433/yyy"/>
+		<property name="openjpa.ConnectionDriverName"  value="net.sourceforge.jtds.jdbc.Driver"/>
+   </properties>
+</persistence>
